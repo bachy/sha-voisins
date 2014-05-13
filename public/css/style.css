@@ -1,0 +1,103 @@
+body, html{
+  position:relative;
+  width:100%;
+  height:100%;
+  margin:0; padding:0;
+}
+
+a:link {
+ text-decoration: none;
+ color: #989898;
+}
+a:visited {
+ text-decoration: none;
+ color: #989898;
+}
+a:hover {
+ text-decoration: none;
+ color: #cecece;
+}
+a:active {
+ text-decoration: none;
+}
+
+.ma-class{
+  text-decoration: none;
+  color: #989898;
+}
+
+.ma-class:hover {
+  color:#989898;
+  text-decoration: none;
+}
+
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+body.index #container{
+  position:relative;
+  width:100%; height:100%;
+  /*padding:30% 15% 0%;*/
+  background: transparent url('../imagep/fond.jpg') no-repeat center bottom;
+  background-size: 100%;
+  /*margin:10%;*/
+}
+
+#mosaic{
+  position: absolute;
+  /*border: 1px solid red;*/
+  padding:0 8% 1%;
+  bottom:0;
+}
+
+
+#mosaic .carre{
+  display:inline-block;
+  width: 32%;
+  margin: 0;
+  background-color: none;
+  vertical-align: bottom;
+}
+
+#mosaic .carre a{
+  display:block;
+}
+
+#mosaic .carre a img{
+  width:100%;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  body.index #container{
+    position: absolute;
+    width: 600px;
+    bottom: 0; left:50%;
+    margin: 0; margin-left:-300px;
+    padding:190px 100px 40px;
+  }
+
+
+  #mosaic{
+    width: 500px;
+  }
+
+  #mosaic .carre.hoverable {
+    width: 150px; height: 150px;
+  }
+
+}
+
+
+/*     VIDEO    */
+body.video #container{
+  position:absolute;
+  left:50%; top:50%;
+  width:720px; height:540px;
+  margin-left:-310px; margin-top:-270px;
+}
+
+body.video #container video{
+  width:100%;
+}
+

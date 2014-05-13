@@ -1,0 +1,12 @@
+doctype html
+html
+  head
+    link(rel='stylesheet', href='/bootstrap/css/bootstrap.css')
+    link(rel='stylesheet', href='/css/style.css')
+    script(src='/js/socket.io.min.js')
+    script(src='/js/jquery-1.11.1.js')
+    script(src='/js/video.js')
+    title Voisin
+  body.video
+    div#container
+      video(id="videoplayer", src='/video/fin.mp4', controls='true')
